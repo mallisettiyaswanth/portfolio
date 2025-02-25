@@ -50,7 +50,7 @@ body {
     --popover-foreground: 172 95% 0%;
     --primary: 172 50% 17.3%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 172 30% 70%;
+    --secondary: 172 30% 60%;
     --secondary-foreground: 0 0% 25%;
     --muted: 134 30% 85%;
     --muted-foreground: 172 5% 35%;
@@ -96,3 +96,10 @@ body {
   }
 }
 
+.clip-custom {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 15% 50%);
+}
+
+.triangle-clip-path {
+  clip-path: polygon(0 0, 30% 0, 15% 50%, 30% 100%, 0 100%, 15% 50%);
+}

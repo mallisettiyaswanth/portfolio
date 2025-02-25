@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(camphor.className, "lg:px-72")}>{children}</body>
+      <body className={cn(camphor.className, "lg:px-60 px-6")}>{children}</body>
     </html>
   );
 }

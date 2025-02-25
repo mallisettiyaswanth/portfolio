@@ -15,6 +15,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontWeight: {
+        extralight: "100",
         light: "300",
         normal: "400",
         medium: "500",
