@@ -79,7 +79,7 @@ const Projects = (props: Props) => {
         "Portfolio is a modern, interactive personal website built with Next.js, ShadCN, and Framer Motion, showcasing projects, skills, and experience with smooth animations and a sleek UI.",
       languages: ["Nextjs", "Shadcn", "framer"],
       sc_link: "https://github.com/mallisettiyaswanth/portfolio.git",
-      prod_link: "https://listenonfly.vercel.app/",
+      prod_link: "https://portfolio-azure-zeta-93.vercel.app/",
       image_path: Portfolio,
     },
     {
@@ -148,7 +148,7 @@ const CustomCard = ({ project }: { project: Project }) => {
           )}
         </div>
       </div>
-      <div className="hidden lg:w-2/5 relative">
+      <div className="hidden lg:w-2/5 lg:block relative">
         <Image
           src={project.image_path}
           style={{
