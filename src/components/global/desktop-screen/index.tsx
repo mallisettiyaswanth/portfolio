@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -41,7 +41,9 @@ const DesktopScreen = (props: Props) => {
             <span>&gt;</span>
             <span>Yaswanth.currentLocation</span>
           </div>
-          <div className="text-[#FFCF50]">"Bhimavaram, AndhraPradesh"</div>
+          <div className="text-[#FFCF50]">
+            &quot;Bhimavaram, Andhra Pradesh&quot;
+          </div>
         </div>
 
         {/* Contact Info */}
@@ -51,7 +53,7 @@ const DesktopScreen = (props: Props) => {
             <span>Yaswanth.contactInfo</span>
           </div>
           <div className="text-[#FFCF50]">
-            ["
+            [&quot;
             <Link
               target="_blank"
               href="mailto:mallisettiyaswanth@gmail.com"
@@ -59,7 +61,7 @@ const DesktopScreen = (props: Props) => {
             >
               mallisettiyaswanth@gmail.com
             </Link>
-            ", "
+            &quot;, &quot;
             <Link
               target="_blank"
               href="https://www.linkedin.com/in/mallisettiyaswanth"
@@ -67,7 +69,7 @@ const DesktopScreen = (props: Props) => {
             >
               linkedIn
             </Link>
-            ", "
+            &quot;, &quot;
             <Link
               target="_blank"
               href="https://www.github.com/mallisettiyaswanth"
@@ -75,7 +77,7 @@ const DesktopScreen = (props: Props) => {
             >
               github
             </Link>
-            "]
+            &quot;]
           </div>
         </div>
 
@@ -92,7 +94,7 @@ const DesktopScreen = (props: Props) => {
               download={true}
               className="text-[#35feff] hover:text-[#35feff]/90"
             >
-              "yaswanth.pdf"
+              &quot;yaswanth.pdf&quot;
             </Link>
           </div>
         </div>
@@ -104,7 +106,8 @@ const DesktopScreen = (props: Props) => {
             <span>Yaswanth.education</span>
           </div>
           <div className="text-[#FFCF50]">
-            ["B.Tech in Information Technology, Vishnu Institute of Technology"]
+            [&quot;B.Tech in Information Technology, Vishnu Institute of
+            Technology&quot;]
           </div>
         </div>
 
@@ -121,14 +124,14 @@ const DesktopScreen = (props: Props) => {
                   onClick={() => toggleExpand(key)}
                   className="hover:underline"
                 >
-                  "{key}": {expandedKey === key ? "[" : "..."}
+                  &quot;{key}&quot;: {expandedKey === key ? "[" : "..."}
                 </span>
                 {expandedKey === key && (
                   <>
                     {skills[key as keyof typeof skills].map(
                       (item, index, array) => (
                         <span key={index} className="ml-2">
-                          "{item}"{index !== array.length - 1 && ","}
+                          &quot;{item}&quot;{index !== array.length - 1 && ","}
                         </span>
                       )
                     )}
@@ -139,6 +142,7 @@ const DesktopScreen = (props: Props) => {
             ))}
           </div>
         </div>
+
         <div className="text-white flex flex-col gap-1">
           <span className="flex gap-2 items-center">
             <span>&gt;</span>

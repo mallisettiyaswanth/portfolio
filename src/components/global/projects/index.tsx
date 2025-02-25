@@ -102,8 +102,8 @@ const Projects = (props: Props) => {
         </h1>
       </div>
       <div className="flex w-full flex-col lg:gap-24 gap-8">
-        {projects.map((project: Project) => {
-          return <CustomCard project={project} />;
+        {projects.map((project: Project, index: number) => {
+          return <CustomCard key={index} project={project} />;
         })}
       </div>
     </div>
@@ -113,16 +113,16 @@ const Projects = (props: Props) => {
 export default Projects;
 
 const CustomCard = ({ project }: { project: Project }) => {
-  
   return (
     <Card className="w-full bg-white rounded-md border-none shadow-lg flex min-h-fit">
       <div className="w-full lg:w-3/5 lg:p-16 p-8 flex flex-col gap-10 text-primary">
         <h1 className="lg:text-4xl text-3xl text-primary">{project.name}</h1>
         <h3 className="leading-6 tracking-wide">{project.description}</h3>
         <div className="flex gap-3 flex-wrap">
-          {project.languages.map((language: string) => {
+          {project.languages.map((language: string, index: number) => {
             return (
               <Badge
+                key={index}
                 className="w-fit max-w-fit text-sm font-normal"
                 variant="outline"
               >
